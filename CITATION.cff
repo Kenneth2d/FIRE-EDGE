@@ -1,0 +1,128 @@
+# Citation File Format (CFF) for FIRE-EDGE
+# https://citation-file-format.github.io/
+
+cff-version: 1.2.0
+message: "If you use FIRE-EDGE in your research, please cite it as below."
+title: "FIRE-EDGE: A Real-Time Firefighting Edge System with Thermal Imaging, Sensor Fusion, and Augmented Reality"
+version: 1.0.0
+date-released: 2024-12-01
+url: "https://github.com/EngAdhamTamer/fire-edge"
+repository-code: "https://github.com/EngAdhamTamer/fire-edge"
+license: MIT
+type: software
+
+authors:
+  - family-names: "Lotfy"
+    given-names: "Ahmed S."
+    email: "ahmedsheriflotfy06@gmail.com"
+    affiliation: "New Ismailia National University"
+    
+  
+  - family-names: "Sayed"
+    given-names: "Adham T."
+    email: "adhamt864@gmail.com"
+    affiliation: "New Ismailia National University"
+    
+  
+  - family-names: "Ghanem"
+    given-names: "Mena R."
+    email: "menaghanim863@gmail.com"
+    affiliation: "New Ismailia National University"
+    
+
+keywords:
+  - "firefighter safety"
+  - "edge AI"
+  - "thermal imaging"
+  - "augmented reality"
+  - "sensor fusion"
+  - "YOLOv8"
+  - "Kalman filter"
+  - "computer vision"
+  - "NVIDIA Jetson"
+  - "ROS"
+
+abstract: |
+  FIRE-EDGE is a low-cost augmented reality (AR) system designed to enhance
+  firefighter safety in smoke-filled environments. The system integrates edge
+  AI processing on NVIDIA Jetson Xavier NX with multi-sensor fusion (thermal
+  camera, LiDAR, IMU, ultrasonic) to provide real-time fire detection and
+  drift-resistant indoor navigation. Leveraging YOLOv8 for object detection
+  and a Kalman filter for sensor fusion, the system achieves 85% mAP@0.5
+  accuracy with 35ms latency, while maintaining a total hardware cost under
+  $2,500. This represents a significant improvement over cloud-based systems
+  that suffer from high latency (>500ms) and cost barriers (>$10,000).
+
+preferred-citation:
+  type: conference-paper
+  title: "FIRE-EDGE: A Real-Time Firefighting Edge System with Thermal Imaging, Sensor Fusion, and Augmented Reality"
+  authors:
+    - family-names: "Lotfy"
+      given-names: "Ahmed S."
+    - family-names: "Sayed"
+      given-names: "Adham T."
+    - family-names: "Ghanem"
+      given-names: "Mena R."
+  conference:
+    name: "1st Student Research Conference on the Role of University in Sustainable and Community Development"
+  year: 2024
+  publisher: "New Ismailia National University"
+  location: "Ismailia, Egypt"
+  abstract: |
+    Firefighters face life-threatening challenges in smoke-filled environments,
+    with disorientation contributing to 28% of fatalities. This paper presents
+    FIRE-EDGE, a low-cost augmented reality (AR) system integrating edge AI
+    and multi-sensor fusion. Leveraging YOLOv8 for fire detection and a Kalman
+    filter for navigation, the system achieves 85% mAP@0.5 accuracy with 35ms
+    latency on an NVIDIA Jetson Xavier NX. Simulations in ROS/Gazebo demonstrate
+    a 2.16% improvement over baseline models, offering a sustainable solution
+    for firefighter safety.
+
+references:
+  - type: article
+    title: "Latency Challenges in Cloud-Dependent Augmented Reality Systems"
+    authors:
+      - family-names: "Zhang"
+        given-names: "Y."
+      - family-names: "Wang"
+        given-names: "L."
+      - family-names: "Chen"
+        given-names: "H."
+    journal: "IEEE Internet of Things Journal"
+    volume: 8
+    issue: 3
+    year: 2021
+    start: 123
+    end: 135
+  
+  - type: article
+    title: "IMU-Based Indoor Navigation for Firefighters: A Drift Correction Approach"
+    authors:
+      - family-names: "Lee"
+        given-names: "H."
+      - family-names: "Park"
+        given-names: "S."
+      - family-names: "Kim"
+        given-names: "J."
+    journal: "IEEE Sensors Journal"
+    volume: 22
+    issue: 5
+    year: 2022
+    start: 450
+    end: 461
+  
+  - type: article
+    title: "Edge AI for Wildfire Detection Using Drones: A YOLOv5 Implementation"
+    authors:
+      - family-names: "Gupta"
+        given-names: "R."
+      - family-names: "Sharma"
+        given-names: "A."
+      - family-names: "Kumar"
+        given-names: "P."
+    journal: "Drones"
+    volume: 4
+    issue: 2
+    year: 2020
+    start: 89
+    end: 104
