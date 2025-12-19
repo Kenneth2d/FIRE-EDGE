@@ -56,15 +56,15 @@ FIRE-EDGE (Firefighting Edge) is an augmented reality navigation and hazard dete
 
 ### Hardware Components
 
-| Component | Function | Status Indicator |
-|-----------|----------|------------------|
-| **Jetson Xavier NX** | Main processor | Green LED when active |
-| **FLIR Lepton 3.5** | Thermal camera | Red LED when capturing |
-| **Garmin LiDAR** | Distance measurement | Blue pulse when ranging |
-| **MPU-9250 IMU** | Motion tracking | N/A (internal) |
-| **Ultrasonic Array** | Close-range obstacles | N/A (internal) |
-| **Kopin OLED Display** | AR visualization | Image output |
-| **Battery Pack** | Power supply | LED battery indicator |
+|        Component       |        Function       |     Status Indicator    |
+|------------------------|-----------------------|-------------------------|
+| **Jetson Xavier NX**   |    Main processor     | Green LED when active   |
+|  **FLIR Lepton 3.5**   |    Thermal camera     | Red LED when capturing  |
+|    **Garmin LiDAR**    |  Distance measurement | Blue pulse when ranging |
+|    **MPU-9250 IMU**    |    Motion tracking    |      N/A (internal)     |
+| **Ultrasonic Array**   | Close-range obstacles |      N/A (internal)     |
+| **Kopin OLED Display** |   AR visualization    |      Image output       |
+|    **Battery Pack**    |     Power supply      |  LED battery indicator  |
 
 ### System Specifications
 
@@ -214,17 +214,17 @@ roslaunch fire_edge simulation.launch scenario:=custom world_file:=/path/to/cust
 
 When Gazebo window is active:
 
-| Key | Action |
-|-----|--------|
-| `W` | Move forward |
-| `S` | Move backward |
-| `A` | Turn left |
-| `D` | Turn right |
-| `Space` | Add waypoint |
-| `N` | Toggle navigation mode |
-| `C` | Clear waypoints |
-| `R` | Reset position |
-| `Q` | Quit simulation |
+|   Key   |        Action          |
+|---------|------------------------|
+|   `W`   |      Move forward      |
+|   `S`   |     Move backward      |
+|   `A`   |       Turn left        |
+|   `D`   |       Turn right       |
+| `Space` |      Add waypoint      |
+|   `N`   | Toggle navigation mode |
+|   `C`   |     Clear waypoints    |
+|   `R`   |     Reset position     |
+|   `Q`   |     Quit simulation    |
 
 ### Training Exercises
 
@@ -330,24 +330,24 @@ python3 tests/test_sensors.py --hardware
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  Status: TRACKING     Battery: 85%    12:45:32         │  <- Header
+│  Status: TRACKING     Battery: 85%    12:45:32          │  <- Header
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
-│                    THERMAL VIEW                          │
-│                 (Fire/Human Detection)                   │
-│                                                          │
-│   🔥 Fire detected                                       │
-│   👤 Human detected                                      │
-│                                                          │
+│                                                         │
+│                    THERMAL VIEW                         │
+│                 (Fire/Human Detection)                  │
+│                                                         │
+│   🔥 Fire detected                                     │
+│   👤 Human detected                                    │
+│                                                         │
 ├─────────────────────────────────────────────────────────┤
 │  ← Turn Left        Walk 15 steps →                     │  <- Navigation
 ├─────────────────────────────────────────────────────────┤
 │  Mini-Map:                                              │
 │  ┌─────────────┐                                        │
-│  │    ·  ←  ·  │  Your position and heading            │
-│  │   · YOU ·   │  Dots = path history                  │
-│  │    ·  ·  ·  │  Squares = waypoints                  │
-│  └─────────────┘  Red lines = obstacles                │
+│  │    ·  ←  ·  │  Your position and heading             │
+│  │   · YOU ·   │  Dots = path history                   │
+│  │    ·  ·  ·  │  Squares = waypoints                   │
+│  └─────────────┘  Red lines = obstacles                 │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -645,13 +645,13 @@ rosservice call /fire_edge/emergency_egress
 
 ### Calibration Schedule
 
-| Component | Frequency | Duration | Procedure |
-|-----------|-----------|----------|-----------|
-| **IMU** | Before each mission | 60 sec | Keep stationary, auto-calibrate |
-| **Thermal** | Weekly | 30 sec | Point at uniform surface |
-| **LiDAR** | Monthly | 10 sec | Verify against known distances |
-| **Display** | As needed | 5 sec | Adjust brightness/alignment |
-| **Full System** | Quarterly | 10 min | Complete recalibration suite |
+|    Component    |      Frequency      | Duration |           Procedure             |
+|-----------------|---------------------|----------|---------------------------------|
+|     **IMU**     | Before each mission |  60 sec  | Keep stationary, auto-calibrate |
+|   **Thermal**   |        Weekly       |  30 sec  |    Point at uniform surface     |
+|    **LiDAR**    |        Monthly      |  10 sec  | Verify against known distances  |
+|   **Display**   |       As needed     |  5 sec   |   Adjust brightness/alignment   |
+| **Full System** |       Quarterly     |  10 min  |   Complete recalibration suite  |
 
 ---
 
@@ -754,14 +754,14 @@ rosservice call /fire_edge/emergency_egress
 
 ### Error Messages
 
-| Error | Meaning | Solution |
-|-------|---------|----------|
-| `TRACKING LOST` | Visual odometry failed | Move to area with more features |
-| `LOW FEATURES` | Not enough keypoints detected | Increase lighting or change angle |
-| `SENSOR TIMEOUT` | Sensor not responding | Check connection, restart node |
-| `MODEL LOAD FAILED` | YOLOv8 model error | Verify model file, check GPU memory |
-| `KALMAN DIVERGENCE` | Filter estimates unstable | Re-initialize filter, check Q/R matrices |
-| `BATTERY CRITICAL` | <10% power remaining | Exit immediately |
+|       Error         |            Meaning            |                 Solution                 |
+|---------------------|-------------------------------|------------------------------------------|
+|   `TRACKING LOST`   |    Visual odometry failed     |      Move to area with more features     |
+|   `LOW FEATURES`    | Not enough keypoints detected |     Increase lighting or change angle    |
+|   `SENSOR TIMEOUT`  |    Sensor not responding      |       Check connection, restart node     |
+| `MODEL LOAD FAILED` |      YOLOv8 model error       |    Verify model file, check GPU memory   |
+| `KALMAN DIVERGENCE` |   Filter estimates unstable   | Re-initialize filter, check Q/R matrices |
+| `BATTERY CRITICAL`  |      <10% power remaining     |             Exit immediately             |
 
 ### Getting Help
 
@@ -860,40 +860,40 @@ If issues persist:
 
 ### Keyboard Shortcuts (Quick Reference)
 
-| Key | Function | Mode |
-|-----|----------|------|
-| `W` | Move forward | Simulation |
-| `S` | Move backward | Simulation |
-| `A` | Turn left | Simulation |
-| `D` | Turn right | Simulation |
-| `Space` | Add waypoint | Both |
-| `N` | Toggle navigation | Both |
-| `M` | Show mini-map | Both |
-| `C` | Clear waypoints | Both |
-| `R` | Reset position | Simulation |
-| `Q` | Quit | Both |
-| `Esc` | Emergency stop | Both |
+|  Key  |      Function     |    Mode    |
+|-------|-------------------|------------|
+|  `W`  |   Move forward    | Simulation |
+|  `S`  |   Move backward   | Simulation |
+|  `A`  |     Turn left     | Simulation |
+|  `D`  |     Turn right    | Simulation |
+|`Space`|    Add waypoint   |    Both    |
+|  `N`  | Toggle navigation |    Both    |
+|  `M`  |   Show mini-map   |    Both    |
+|  `C`  |   Clear waypoints |    Both    |
+|  `R`  |   Reset position  | Simulation |
+|  `Q`  |       Quit        |    Both    |
+| `Esc` |   Emergency stop  |    Both    |
 
 ### ROS Topics (Reference)
 
-| Topic | Message Type | Description |
-|-------|-------------|-------------|
-| `/thermal/image_raw` | `sensor_msgs/Image` | Raw thermal camera feed |
-| `/fire_edge/detections` | `fire_edge/Detections` | YOLOv8 detection results |
-| `/fire_edge/pose` | `geometry_msgs/PoseStamped` | Estimated position |
-| `/fire_edge/waypoints` | `fire_edge/WaypointArray` | Current waypoints |
-| `/fire_edge/path` | `nav_msgs/Path` | Recorded path history |
-| `/fire_edge/navigation_cmd` | `std_msgs/String` | Navigation commands |
+|            Topic            |         Message Type        |       Description        |
+|-----------------------------|-----------------------------|--------------------------|
+|    `/thermal/image_raw`     |     `sensor_msgs/Image`     | Raw thermal camera feed  |
+|   `/fire_edge/detections`   |    `fire_edge/Detections`   | YOLOv8 detection results |
+|      `/fire_edge/pose`      | `geometry_msgs/PoseStamped` |    Estimated position    |
+|   `/fire_edge/waypoints`    |  `fire_edge/WaypointArray`  |     Current waypoints    |
+|      `/fire_edge/path`      |        `nav_msgs/Path`      |   Recorded path history  |
+| `/fire_edge/navigation_cmd` |       `std_msgs/String`     |    Navigation commands   |
 
 ### Configuration Files
 
-| File | Purpose | Location |
-|------|---------|----------|
-| `yolov8_config.yaml` | Detection parameters | `config/` |
-| `kalman_params.yaml` | Sensor fusion settings | `config/` |
-| `display_config.yaml` | AR overlay settings | `config/` |
-| `imu_calibration.yaml` | IMU calibration data | `config/` |
-| `thermal_ffc.npy` | Thermal correction | `config/` |
+|          File          |         Purpose        | Location  |
+|------------------------|------------------------|-----------|
+|  `yolov8_config.yaml`  |  Detection parameters  | `config/` |
+|  `kalman_params.yaml`  | Sensor fusion settings | `config/` |
+| `display_config.yaml`  |  AR overlay settings   | `config/` |
+| `imu_calibration.yaml` |  IMU calibration data  | `config/` |
+|    `thermal_ffc.npy`   |   Thermal correction   | `config/` |
 
 ---
 
