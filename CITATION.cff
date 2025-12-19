@@ -5,7 +5,7 @@ cff-version: 1.2.0
 message: "If you use FIRE-EDGE in your research, please cite it as below."
 title: "FIRE-EDGE: A Real-Time Firefighting Edge System with Thermal Imaging, Sensor Fusion, and Augmented Reality"
 version: 1.0.0
-date-released: 2024-12-01
+date-released: 2025-12-19
 url: "https://github.com/EngAdhamTamer/fire-edge"
 repository-code: "https://github.com/EngAdhamTamer/fire-edge"
 license: MIT
