@@ -374,7 +374,7 @@ This system is based on our conference paper:
 **Institution**: New Ismailia National University, Ismailia, Egypt  
 **Conference**: 1st Student Research Conference - Role of University in Sustainable Development
 
-📥 [**Download Full Paper (PDF)**](docs/FIRE-EDGE.pdf)
+📥 [**Download Full Paper (PDF)**](FIRE-EDGE.pdf)
 
 ### Abstract
 
