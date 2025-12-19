@@ -25,24 +25,24 @@ Comprehensive installation and configuration guide for the FIRE-EDGE system.
 
 ### Minimum Requirements (Simulation)
 
-| Component | Specification |
-|-----------|--------------|
-| **OS** | Ubuntu 20.04 LTS |
-| **CPU** | Intel Core i5 (4 cores) |
-| **RAM** | 8GB |
-| **GPU** | Not required (CPU only) |
-| **Storage** | 20GB free space |
+|  Component  |          Specification          |
+|-------------|---------------------------------|
+|   **OS**    |         Ubuntu 20.04 LTS        |
+|   **CPU**   |       Intel Core i5 (4 cores)   |
+|   **RAM**   |               8GB               |
+|   **GPU**   |      Not required (CPU only)    |
+| **Storage** |          20GB free space        |
 | **Network** | Internet (for dataset download) |
 
 ### Recommended (Full Hardware)
 
-| Component | Specification |
-|-----------|--------------|
-| **OS** | Ubuntu 20.04 LTS |
-| **CPU** | Intel Core i7 (6+ cores) |
-| **RAM** | 16GB |
-| **GPU** | NVIDIA GPU with CUDA 11+ |
-| **Storage** | 50GB SSD |
+|   Component  |           Specification           |
+|--------------|-----------------------------------|
+|    **OS**    |          Ubuntu 20.04 LTS         |
+|    **CPU**   |       Intel Core i7 (6+ cores)    |
+|    **RAM**   |                16GB               |
+|    **GPU**   |      NVIDIA GPU with CUDA 11+     |
+| **Storage**  |              50GB SSD             |
 | **Hardware** | NVIDIA Jetson Xavier NX + sensors |
 
 ### Required Hardware (Full System)
@@ -64,11 +64,11 @@ Comprehensive installation and configuration guide for the FIRE-EDGE system.
 
 Choose your setup based on your goals:
 
-| Option | Use Case | Hardware Required | Time | Difficulty |
-|--------|----------|-------------------|------|------------|
-| **A: Simulation** | Development, algorithm testing | PC with webcam | 2h | Medium |
-| **B: Jetson NX** | Edge deployment, real hardware | Full hardware list | 4h+ | Hard |
-| **C: Demo Mode** | Quick evaluation, presentations | PC only | 30m | Easy |
+|      Option       |             Use Case            | Hardware Required  | Time | Difficulty |
+|-------------------|---------------------------------|--------------------|------|------------|
+| **A: Simulation** | Development, algorithm testing  |   PC with webcam   |  2h  |   Medium   |
+|  **B: Jetson NX** | Edge deployment, real hardware  | Full hardware list |  4h+ |    Hard    |
+|  **C: Demo Mode** | Quick evaluation, presentations |       PC only      |  30m |    Easy    |
 
 ---
 
@@ -442,8 +442,8 @@ python demo/firefighter_simulator.py
 ### Wiring Diagram
 
 ```
-┌─────────────────────────────────────────────────────┐
-│         NVIDIA Jetson Xavier NX                      │
+┌────────────────────────────────────────────────────┐
+│         NVIDIA Jetson Xavier NX                    │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐          │
 │  │   USB    │  │   I2C    │  │   SPI    │          │
 │  └────┬─────┘  └────┬─────┘  └────┬─────┘          │
@@ -459,7 +459,7 @@ python demo/firefighter_simulator.py
              (I2C Bus 1, Address 0x62)
 
 ┌─────────────────────────────────────────────────────┐
-│         Serial/GPIO Connections                      │
+│         Serial/GPIO Connections                     │
 ├─────────────────────────────────────────────────────┤
 │  GPIO Pin 7  -> Ultrasonic #1 (Front)               │
 │  GPIO Pin 11 -> Ultrasonic #2 (Right)               │
@@ -468,11 +468,11 @@ python demo/firefighter_simulator.py
 └─────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────┐
-│         Power Distribution                           │
+│         Power Distribution                          │
 ├─────────────────────────────────────────────────────┤
-│  14.8V Battery -> DC-DC Converter -> Jetson NX (5V)  │
-│                -> LDO Regulator  -> Sensors (3.3V)   │
-│                -> Boost Converter -> Display (12V)   │
+│  14.8V Battery -> DC-DC Converter -> Jetson NX (5V) │
+│                -> LDO Regulator  -> Sensors (3.3V)  │
+│                -> Boost Converter -> Display (12V)  │
 └─────────────────────────────────────────────────────┘
 ```
 
