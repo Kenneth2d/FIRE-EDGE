@@ -1,6 +1,6 @@
 # FIRE-EDGE User Manual
 
-**Version 1.0** | December 2024
+**Version 1.0** | December 2025
 
 Complete operational guide for the FIRE-EDGE augmented reality firefighting navigation system.
 
